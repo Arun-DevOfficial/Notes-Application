@@ -59,7 +59,7 @@ const UpdateTask = () => {
       setErrors(newErrors);
     } else {
       // Submit the form (task update logic here)
-      Axios.put(`http://localhost:5050/update/${id}`, {
+      Axios.put(`https://note-task-app.onrender.com/update/${id}`, {
         taskTitle: formData.title,
         deadlineDate: formData.deadline,
         completionStatus: formData.completionStatus,

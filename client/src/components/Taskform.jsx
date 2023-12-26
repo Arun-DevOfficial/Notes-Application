@@ -35,7 +35,7 @@ const TaskForm = () => {
     }
 
     try {
-      const response = await axios.post("http://localhost:5050/taskform", {
+      const response = await axios.post("https://note-task-app.onrender.com/taskform", {
         taskTitle,
         deadlineDate,
         completionStatus,

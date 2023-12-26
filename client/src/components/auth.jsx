@@ -48,10 +48,13 @@ const Auth = () => {
       setErrors(newErrors);
     } else {
       try {
-        const response = await axios.post("http://localhost:5050/login", {
-          username: formData.username,
-          password: formData.password,
-        });
+        const response = await axios.post(
+          "https://note-task-app.onrender.com/login",
+          {
+            username: formData.username,
+            password: formData.password,
+          }
+        );
 
         if (response.status >= 200 && response.status < 300) {
           // Login successful

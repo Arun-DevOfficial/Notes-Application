@@ -52,7 +52,7 @@ const Register = () => {
       console.log("Form submitted:", formData);
 
       // Axios API
-      Axios.post("http://localhost:5050/register", {
+      Axios.post("https://note-task-app.onrender.com/register", {
         username: formData.username,
         password: formData.password,
       })
