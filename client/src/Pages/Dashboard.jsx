@@ -10,7 +10,7 @@ const Dashboard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:5050/viewtasks");
+        const response = await axios.get("https://note-task-app.onrender.com/viewtasks");
         console.log("Fetched tasks:", response.data);
         setViewTask(response.data);
 
