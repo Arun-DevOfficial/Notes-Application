@@ -1,6 +1,8 @@
-{
-  "version": 2,
-  "build": {
-    "use": "@vercel/node"
+[
+  {
+    "buildCommand": "next build"
+  },
+  {
+    "installCommand": "npm install"
   }
-}
+]
